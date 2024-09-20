@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Recipe Book</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Food Recipe Application</h1>
+    </header>
+    <main>
+        <section id="categories">
+            <h2>Categories</h2>
+            <div id="category-list"></div>
+        </section>
+        <section id="recipes">
+            <div id="search-container">
+                <input type="text" id="search" placeholder="Search recipes...">
+            </div>
+            <div id="recipe-list">
+                
+            </div>
+        </section>
+        <section id="add-recipe">
+            <h2>Add Your Recipe</h2>
+            <form id="recipe-form">
+                <input type="text" id="title" placeholder="Recipe Title" required>
+                <textarea id="ingredients" placeholder="Ingredients (one per line)" required></textarea>
+                <textarea id="instructions" placeholder="Instructions" required></textarea>
+                <select id="category" required>
+                    <option value="">Select Category</option>
+                </select>
+                <button type="submit">Add Recipe</button>
+            </form>
+        </section>
+        <section id="your-recipes">
+            <h2>Your Recipes</h2>
+            <div id="user-recipe-list"></div>
+        </section>
+        <section id="recipe-detail" class="hidden">
+            <button id="back-button">← Back to Recipes</button>
+            <h2 id="detail-title"></h2>
+            <p id="detail-category"></p>
+            <div id="detail-content">
+                <div id="detail-ingredients">
+                    <h3>Ingredients:</h3>
+                    <ul></ul>
+                </div>
+                <div id="detail-instructions">
+                    <h3>Instructions:</h3>
+                    <p></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
